@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Coaching Center | Teacher Portfolio</title>
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar Architecture -->
+      <aside class="sidebar">
+        <div class="teacher-profile">
+          <div class="profile-img">
+            <img
+              src="https://images.unsplash.com/photo-1544717297-fa154da09f9b?q=80&w=200&h=200&auto=format&fit=crop"
+              alt="Teacher Profile"
+            />
+          </div>
+          <h2>Prof. Adrian Sterling</h2>
+          <p class="bio">
+            Senior Educator in Advanced Mathematics & Physics. Dedicated to
+            helping students achieve academic excellence through structured
+            learning and personal care.
+          </p>
+        </div>
+
+        <nav class="archives-nav">
+          <h3>Yearly Archives</h3>
+          <div class="folder-grid">
+            <a href="#year-2026" class="folder-tab active-tab"
+              ><i class="fas fa-folder-open"></i> 2026</a
+            >
+            <a href="#year-2025" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2025</a
+            >
+            <a href="#year-2024" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2024</a
+            >
+            <a href="#year-2023" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2023</a
+            >
+            <a href="#year-2022" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2022</a
+            >
+            <a href="#year-2021" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2021</a
+            >
+            <a href="#year-2020" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2020</a
+            >
+            <a href="#year-2019" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2019</a
+            >
+            <a href="#year-2018" class="folder-tab"
+              ><i class="fas fa-folder"></i> 2018</a
+            >
+          </div>
+        </nav>
+      </aside>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        <header class="main-header">
+          <h1 class="logo">Sterling Academy</h1>
+        </header>
+
+        <!-- Hero Slider -->
+        <section class="hero-carousel">
+          <div class="slider-container">
+            <div class="slide active">
+              <img
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&h=400&auto=format&fit=crop"
+                alt="Classroom"
+              />
+              <div class="slide-overlay">
+                <h2>Expert Mathematics Guidance</h2>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1200&h=400&auto=format&fit=crop"
+                alt="Study"
+              />
+              <div class="slide-overlay">
+                <h2>Personalized Batch Care</h2>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://images.unsplash.com/photo-1513258496099-48168024adb0?q=80&w=1200&h=400&auto=format&fit=crop"
+                alt="Students"
+              />
+              <div class="slide-overlay">
+                <h2>Digital Lecture Sheets</h2>
+              </div>
+            </div>
+          </div>
+          <button class="slider-nav prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-nav next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </section>
+
+        <!-- Batch Info -->
+        <section class="batch-info">
+          <div class="grid-3">
+            <div class="card">
+              <i class="fas fa-atom card-icon"></i>
+              <h3>Science Batch</h3>
+              <p>In-depth Physics & Chemistry for high school success.</p>
+              <ul class="features">
+                <li><i class="fas fa-check"></i> Weekly Exams</li>
+                <li><i class="fas fa-check"></i> Lab Sessions</li>
+              </ul>
+            </div>
+            <div class="card">
+              <i class="fas fa-calculator card-icon"></i>
+              <h3>Advanced Math</h3>
+              <p>Mastering Calculus and Algebra through logic.</p>
+              <ul class="features">
+                <li><i class="fas fa-check"></i> Personal Care</li>
+                <li><i class="fas fa-check"></i> Digital Notes</li>
+              </ul>
+            </div>
+            <div class="card">
+              <i class="fas fa-microscope card-icon"></i>
+              <h3>Admission Care</h3>
+              <p>Intensive prep for university entrance exams.</p>
+              <ul class="features">
+                <li><i class="fas fa-check"></i> Mock Tests</li>
+                <li><i class="fas fa-check"></i> Career Advice</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Current Year 2026: Tuition Tracker -->
+        <section id="year-2026" class="year-section current-year">
+          <div class="section-header">
+            <h2>Academic Year 2026</h2>
+            <span class="badge">Live Tracker</span>
+          </div>
+          <p>Real-time tuition fee status for current enrolled students.</p>
+
+          <div class="table-wrapper">
+            <table class="salary-sheet">
+              <thead>
+                <tr>
+                  <th>Student Name</th>
+                  <th>Jun</th>
+                  <th>Jul</th>
+                  <th>Aug</th>
+                  <th>Sep</th>
+                  <th>Oct</th>
+                  <th>Nov</th>
+                  <th>Dec</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>James Wilson</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Sophia Chen</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Liam O'Connor</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Isabella Garcia</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Ethan Wright</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Ava Martinez</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Mason Thompson</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Mia Robinson</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Lucas Davis</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td><strong>Charlotte Lee</strong></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status paid">Paid</span></td>
+                  <td><span class="status due">Due</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------- -->
+
+        <!-- Past Archives Section -->
+        <section id="year-2025" class="year-section">
+          <div class="section-header"><h2>Academic Year 2025</h2></div>
+          <div
+            class="archive-grid"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 2rem;
+              margin-top: 1.5rem;
+            "
+          >
+            <div class="gallery">
+              <h4 style="margin-bottom: 1rem; color: var(--text-gray)">
+                Session Gallery
+              </h4>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 0.5rem;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+              </div>
+            </div>
+            <div class="performers">
+              <h4 style="margin-bottom: 1rem; color: var(--text-gray)">
+                Top Performers
+              </h4>
+              <ul style="list-style: none; font-size: 0.9rem">
+                <li
+                  style="
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid var(--border);
+                  "
+                >
+                  <i
+                    class="fas fa-trophy"
+                    style="color: gold; margin-right: 0.5rem"
+                  ></i>
+                  Alex Rivera (GPA 5.0)
+                </li>
+                <li
+                  style="
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid var(--border);
+                  "
+                >
+                  <i
+                    class="fas fa-medal"
+                    style="color: silver; margin-right: 0.5rem"
+                  ></i>
+                  Sarah Jenkins (GPA 5.0)
+                </li>
+                <li
+                  style="
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid var(--border);
+                  "
+                >
+                  <i
+                    class="fas fa-medal"
+                    style="color: #cd7f32; margin-right: 0.5rem"
+                  ></i>
+                  Kevin Yao (GPA 4.9)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="year-2024" class="year-section">
+          <div class="section-header"><h2>Academic Year 2024</h2></div>
+          <div
+            class="archive-grid"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              gap: 2rem;
+              margin-top: 1.5rem;
+            "
+          >
+            <div class="gallery">
+              <h4 style="margin-bottom: 1rem; color: var(--text-gray)">
+                Session Gallery
+              </h4>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(3, 1fr);
+                  gap: 0.5rem;
+                "
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=150&h=150&auto=format&fit=crop"
+                  style="width: 100%; border-radius: 4px"
+                  alt="Gallery"
+                />
+              </div>
+            </div>
+            <div class="performers">
+              <h4 style="margin-bottom: 1rem; color: var(--text-gray)">
+                Top Performers
+              </h4>
+              <ul style="list-style: none; font-size: 0.9rem">
+                <li
+                  style="
+                    padding: 0.5rem 0;
+                    border-bottom: 1px solid var(--border);
+                  "
+                >
+                  <i
+                    class="fas fa-trophy"
+                    style="color: gold; margin-right: 0.5rem"
+                  ></i>
+                  Emily Blunt (GPA 5.0)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="year-2023" class="year-section">
+          <div class="section-header"><h2>Academic Year 2023</h2></div>
+          <p>Archive content for 2023...</p>
+        </section>
+        <section id="year-2022" class="year-section">
+          <div class="section-header"><h2>Academic Year 2022</h2></div>
+          <p>Archive content for 2022...</p>
+        </section>
+        <section id="year-2021" class="year-section">
+          <div class="section-header"><h2>Academic Year 2021</h2></div>
+          <p>Archive content for 2021...</p>
+        </section>
+        <section id="year-2020" class="year-section">
+          <div class="section-header"><h2>Academic Year 2020</h2></div>
+          <p>Archive content for 2020...</p>
+        </section>
+        <section id="year-2019" class="year-section">
+          <div class="section-header"><h2>Academic Year 2019</h2></div>
+          <p>Archive content for 2019...</p>
+        </section>
+        <section id="year-2018" class="year-section">
+          <div class="section-header"><h2>Academic Year 2018</h2></div>
+          <p>Archive content for 2018...</p>
+        </section>
+
+        <!-- ------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------- -->
+        <!-- ------------------------------------------------------------------------------- -->
+
+        <!-- Past Archives Section -->
+
+        <footer class="main-footer">
+          <div class="footer-grid">
+            <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> 123 Education Row,
+                Knowledge District, NY 10001
+              </p>
+              <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+              <p><i class="fas fa-envelope"></i> admin@sterlingacademy.edu</p>
+            </div>
+            <div class="map-container">
+              <div class="dummy-map">
+                <i class="fas fa-map-marked-alt"></i>
+                <p>Interactive Google Map Integration</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2026 Sterling Academy. All rights reserved.</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
