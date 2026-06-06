@@ -365,45 +365,14 @@ th {
 .footer-bottom {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding-top: 2rem;
+  padding: 1rem;
   font-size: 0.8rem;
   opacity: 0.6;
+  background: var(--profile-bg);
 }
 
-/* MOBILE RESPONSIVENESS */
-@media (max-width: 992px) {
-  .app-container {
-    display: flex;
-    flex-direction: column;
-  }
 
-  .sidebar {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-  }
 
-  .main-content {
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .main-header,
-  .hero-carousel {
-    margin-left: 0;
-  }
-
-  .folder-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-bottom: 1rem;
-    gap: 1rem;
-    justify-content: center;
-  }
-
-  .folder-tab {
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
+.contact-info {
+  line-height: 2rem;
 }
