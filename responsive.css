@@ -87,6 +87,10 @@
     padding: 0.1rem 0 0.5rem;
     background: var(--profile-bg);
   }
+  td {
+    font-size: .8rem;
+  }
+
   .gallery h4 {
     color: rgb(127, 82, 103) !important;
     font-size: 0.8rem;
