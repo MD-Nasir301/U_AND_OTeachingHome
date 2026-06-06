@@ -1,357 +1,398 @@
 :root {
-    --primary: #1e3a8a;
-    --primary-light: #2563eb;
-    --accent: #0d9488;
-    --bg-light: #f8fafc;
-    --white: #ffffff;
-    --text-dark: #1e293b;
-    --text-gray: #64748b;
-    --border: #e2e8f0;
-    --sidebar-width: 300px;
-    --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --primary: #243050;
+  --primary-light: #2563eb;
+  --accent: #0d9488;
+  --bg-light: #f8fafc;
+  --bg-dark: #a4b5cd;
+  --white: #ffffff;
+  --text-dark: #1e293b;
+  --text-gray: #64748b;
+  --border: #e2e8f0;
+  --sidebar-width: 300px;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden; /* স্ক্রিনের বাইরে যেন কোনো কন্টেন্ট না যায় */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
 }
 
 .app-container {
-    display: block; /* Fixed sidebar layout-এর জন্য grid-এর প্রয়োজন নেই */
-    width: 100%;
-    min-height: 100vh;
-    box-sizing: border-box;
+  display: block; 
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 /* Sidebar Styling */
 .sidebar {
-    background-color: var(--primary);
-    color: var(--white);
-    padding: 2.5rem 1.5rem;
-    position: fixed;
-    width: var(--sidebar-width);
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 100;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 2.5rem 1.5rem;
+  position: fixed;
+  width: var(--sidebar-width);
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  z-index: 100;
 }
 
 .teacher-profile {
-    text-align: center;
-    margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin: 0 auto 1.5rem;
-    overflow: hidden;
-    border: 4px solid var(--accent);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border: 4px solid var(--accent);
 }
 
 .profile-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .teacher-profile h2 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    letter-spacing: 0.13em;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 400;
 }
 
 .bio {
-    font-size: 0.875rem;
-    opacity: 0.8;
+  font-size: 0.875rem;
+  opacity: 0.8;
+  color: #c8bbbb;
 }
 
 .archives-nav h3 {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    padding-bottom: 0.5rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.5rem;
 }
 
 .folder-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .folder-tab {
-    display: flex;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    background: rgba(255,255,255,0.05);
-    border-radius: 8px;
-    color: var(--white);
-    text-decoration: none;
-    transition: all 0.2s ease;
-    font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: var(--white);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .folder-tab i {
-    margin-right: 0.75rem;
-    color: var(--accent);
+  margin-right: 0.75rem;
+  color: var(--accent);
 }
 
 .folder-tab:hover {
-    background: rgba(255,255,255,0.15);
-    transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
 }
 
 /* Main Content Styling */
 .main-content {
-    margin-left: var(--sidebar-width);
-    width: auto; /* এটি অটোমেটিক বাকি জায়গা পূরণ করবে */
-    min-height: 100vh;
+  margin-left: var(--sidebar-width);
+  width: auto; 
+  min-height: 100vh;
 }
 
 .main-header {
-    background: var(--white);
-    padding: 1.5rem 2rem;
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: var(--bg-dark);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
-
 .logo {
-    color: var(--primary);
-    font-size: 1.5rem;
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
+  border-radius: 10%;
+}
+.brand {
+  color: var(--primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
 }
 
 .logo::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 3px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--accent);
-    transition: width 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
 }
 
 .logo:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* Hero Slider */
 .hero-carousel {
-    position: relative;
-    height: 380px;
-    overflow: hidden;
+  position: relative;
+  height: 380px;
+  overflow: hidden;
 }
 
 .slider-container {
-    height: 100%;
-    display: flex;
+  height: 100%;
+  display: flex;
 }
 
 .slide {
-    min-width: 100%;
-    height: 100%;
-    position: relative;
-    display: none;
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  display: none;
 }
 
 .slide.active {
-    display: block;
+  display: block;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slide-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    padding: 3rem 2rem;
-    color: var(--white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  padding: 3rem 2rem;
+  color: var(--white);
 }
 
 .slider-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255,255,255,0.2);
-    border: none;
-    color: var(--white);
-    padding: 1rem;
-    cursor: pointer;
-    backdrop-filter: blur(4px);
-    transition: background 0.3s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: var(--white);
+  padding: 1rem;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.3s;
 }
 
-.slider-nav:hover { background: var(--primary); }
-.prev { left: 1rem; }
-.next { right: 1rem; }
+.slider-nav:hover {
+  background: var(--primary);
+}
+.prev {
+  left: 1rem;
+}
+.next {
+  right: 1rem;
+}
 
 /* Batch Cards */
-.batch-info { padding: 3rem 2rem; }
+.batch-info {
+  padding: 3rem 2rem;
+}
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 .card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
 }
 
-.card:hover { transform: translateY(-5px); }
+.card:hover {
+  transform: translateY(-5px);
+}
 
 .card-icon {
-    font-size: 2rem;
-    color: var(--accent);
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
 }
 
 .features {
-    list-style: none;
-    margin-top: 1rem;
-    font-size: 0.875rem;
+  list-style: none;
+  margin-top: 1rem;
+  font-size: 0.875rem;
 }
 
-.features li { margin-bottom: 0.5rem; color: var(--text-gray); }
-.features i { color: var(--accent); margin-right: 0.5rem; }
+.features li {
+  margin-bottom: 0.5rem;
+  color: var(--text-gray);
+}
+.features i {
+  color: var(--accent);
+  margin-right: 0.5rem;
+}
 
 /* Table Styling */
-.year-section { padding: 3rem 2rem; }
+.year-section {
+  padding: 3rem 2rem;
+}
 .section-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .badge {
-    background: #dcfce7;
-    color: #166534;
-    padding: 0.25rem 0.75rem;
-    border-radius: 99px;
-    font-size: 0.75rem;
-    font-weight: 600;
+  background: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 .table-wrapper {
-    margin-top: 2rem;
-    background: var(--white);
-    border-radius: 12px;
-    border: 1px solid var(--border);
-    overflow-x: auto;
+  margin-top: 2rem;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  overflow-x: auto;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 800px;
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
 }
 
-th, td {
-    padding: 1rem;
-    text-align: left;
-    border-bottom: 1px solid var(--border);
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
 }
 
-th { background: #f1f5f9; font-weight: 600; color: var(--text-dark); }
+th {
+  background: #f1f5f9;
+  font-weight: 600;
+  color: var(--text-dark);
+}
 
 .status {
-    padding: 0.25rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.75rem;
-    font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
-.paid { background: #ccfbf1; color: #0d9488; }
-.due { background: #fee2e2; color: #dc2626; }
+.paid {
+  background: #ccfbf1;
+  color: #0d9488;
+}
+.due {
+  background: #fee2e2;
+  color: #dc2626;
+}
 
 /* Footer */
 .main-footer {
-    background: var(--primary);
-    color: var(--white);
-    padding: 4rem 2rem 1rem;
+  background: var(--primary);
+  color: var(--white);
+  padding: 4rem 2rem 1rem;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  margin-bottom: 3rem;
 }
 
 .dummy-map {
-    height: 200px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px dashed rgba(255,255,255,0.2);
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
 }
 
 .footer-bottom {
-    text-align: center;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 2rem;
-    font-size: 0.8rem;
-    opacity: 0.6;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
 }
 
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 992px) {
-    .app-container {
-        display: flex;
-        flex-direction: column;
-    }
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .sidebar {
-        position: relative;
-        width: 100%;
-        height: auto;
-        padding: 2rem 1rem;
-    }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
-    .main-content {
-        margin-left: 0;
-        width: 100%; 
-    }
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
 
-    .folder-grid {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-bottom: 1rem;
-        gap: 1rem;
-       justify-content: center;
-    }
+  .folder-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    gap: 1rem;
+    justify-content: center;
+  }
 
-    .folder-tab {
-        white-space: nowrap;
-        flex-shrink: 0;
-    }
+  .folder-tab {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
 }
