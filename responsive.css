@@ -1,17 +1,19 @@
-
-
 @media (max-width: 456px) {
   .hero-carousel {
     height: 210px;
   }
   .slide-overlay {
-  padding: 1rem 2rem !important;
-  color: var(--white);
-  font-size: 0.65rem;
-}
+    padding: 1rem 2rem !important;
+    color: var(--white);
+    font-size: 0.65rem;
+  }
 
-.brand {
+  .brand {
     color: var(--primary);
     font-size: 1.1rem;
-}
+  }
+
+  .slider-nav {
+    backdrop-filter: blur(0);
+  }
 }
