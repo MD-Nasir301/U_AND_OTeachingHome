@@ -3,7 +3,7 @@
     height: 210px;
   }
   .slide-overlay {
-    padding: 1rem 2rem !important;
+    padding: 1rem .6rem !important;
     color: var(--white);
     font-size: 0.65rem;
   }
@@ -30,7 +30,6 @@
     text-align: left;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem;
-    background: var(--profile-bg);
   }
   .profile-header {
     margin-right: 0rem;
@@ -45,5 +44,9 @@
     flex: 1;
     font-size: 0.875rem;
     text-align: center;
+  }
+  .archives-nav  {
+    padding: .1rem 0 .5rem;
+    background: var(--profile-bg);
   }
 }
