@@ -337,6 +337,15 @@ th {
   color: #dc2626;
 }
 
+.gallery {
+  grid-column: span 2;
+}
+
+.gallery h4 {
+  color: rgb(127, 82, 103) !important; 
+  font-size: 1.15rem;
+}
+
 /* Footer */
 .main-footer {
   background: var(--primary);
