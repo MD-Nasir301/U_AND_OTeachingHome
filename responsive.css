@@ -1,4 +1,4 @@
-@media (max-width: 456px) {
+@media (max-width: 992px) {
   .hero-carousel {
     height: 210px;
   }
@@ -16,4 +16,8 @@
   .slider-nav {
     backdrop-filter: blur(0);
   }
+
+  .sidebar {
+  margin-top: 0px;
+}
 }
