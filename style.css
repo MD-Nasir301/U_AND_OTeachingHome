@@ -421,7 +421,7 @@ tbody tr:hover {
 .menu-btn {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 15px;
   background: rgba(131, 184, 238, 0.198);
   border: none;
@@ -439,7 +439,7 @@ tbody tr:hover {
 
 .side-drawer {
   position: fixed;
-  top: 0;
+  top: 0px;
   right: -300px; /* Hidden by default */
   width: 180px;
   height: 100%;
