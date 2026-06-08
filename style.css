@@ -244,14 +244,18 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border: none;
   color: var(--white);
-  padding: 1rem;
+  padding: .6rem;
   cursor: pointer;
   backdrop-filter: blur(4px);
   transition: background 0.3s;
 }
 
 .slider-nav:hover {
-  background: var(--primary);
+  background: rgba(196, 177, 177, 0.312);
+}
+.slider-nav i {
+  font-size: .6rem;
+  color: black;
 }
 .prev {
   left: 1rem;
