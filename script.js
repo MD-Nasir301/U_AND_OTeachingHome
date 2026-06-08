@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   prevBtn.addEventListener("click", prevSlide);
 
   // Auto-scroll slider
-  setInterval(nextSlide, 5000);
+  setInterval(nextSlide, 2300);
 
   const lightbox = GLightbox({
     selector: ".glightbox",
