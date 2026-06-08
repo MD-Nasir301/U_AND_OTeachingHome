@@ -449,7 +449,7 @@ tbody tr:hover {
   width: 180px;
   height: 100%;
   background: rgb(226, 192, 249);
-  z-index: 2000;
+  z-index: 10000;
   transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 1.5rem;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
@@ -474,7 +474,7 @@ tbody tr:hover {
   display: flex;
   align-items: center;
   padding: 0.85rem 1rem;
-  background: var(--bg-light);
+  background: rgb(249, 246, 247);
   border-radius: 8px;
   color: var(--text-dark);
   text-decoration: none;
@@ -505,4 +505,3 @@ tbody tr:hover {
   display: none;
   z-index: 1999;
 }
-
