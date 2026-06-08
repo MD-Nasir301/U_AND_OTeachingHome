@@ -36,7 +36,12 @@
 .yellow {
   color: rgb(209, 209, 32);
 }
-
+.skyblue {
+  color: rgb(113, 122, 177);
+}
+.underline {
+  text-decoration: underline;
+}
 * {
   margin: 0;
   padding: 0;
