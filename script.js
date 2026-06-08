@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const lightbox = GLightbox({
     selector: ".glightbox",
+    loop: true,
   });
 
   // --- Mobile Menu Toggle Logic ---
