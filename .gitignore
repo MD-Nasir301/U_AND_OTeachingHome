@@ -1,4 +1,20 @@
 
-nodemodules/
-dist/
+node_modules/
+output.css
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+.DS_Store
+Thumbs.db
+
+.vscode/
+.idea/
+
+
 .env
+.env.local
