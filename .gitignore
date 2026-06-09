@@ -1,20 +1,12 @@
 
-node_modules/
-output.css
 
-# logs
+dist/
+.env
+.env.local
+*.log
 npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
+output.css 
 
 .DS_Store
 Thumbs.db
 
-.vscode/
-.idea/
-
-
-.env
-.env.local
