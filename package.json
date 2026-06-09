@@ -14,5 +14,6 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.0"
-  }
+  },
+  "packageManager": "pnpm@11.0.9"
 }
