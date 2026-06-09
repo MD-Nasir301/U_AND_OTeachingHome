@@ -375,12 +375,12 @@ tbody tr:hover {
 }
 
 .paid {
-  background: #ccfbf1;
-  color: #0d9488;
+  background: #f7faf9;
+  color: #311966;
 }
 .due {
-  background: #fee2e2;
-  color: #dc2626;
+  background: #932f2f;
+  color: #ecd7d7;
 }
 
 .gallery {
