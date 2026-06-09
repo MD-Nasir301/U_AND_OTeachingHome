@@ -1,24 +1,16 @@
 {
-  "name": "U&O_Teaching_Home",
+  "name": "uando-teaching-home",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tailwindcss -i ./style.css -o ./output.css --watch",
     "build": "tailwindcss -i ./style.css -o ./output.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.0.9",
-      "onFail": "download"
-    }
-  },
-  "type": "module",
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.0",
     "tailwindcss": "^4.3.0"
